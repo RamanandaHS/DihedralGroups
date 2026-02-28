@@ -124,7 +124,7 @@ def export_context_table(n):
         for col_idx, attr in enumerate(attributes, start=2):
             ws.cell(row=row_idx, column=col_idx, value=incidence(obj, attr))
     
-    filename = f"E:/CodeApps/context/D{n}_table.xlsx"
+    filename = f"E:/context/D{n}_table.xlsx"
     wb.save(filename)
     return filename
 
